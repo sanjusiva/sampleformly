@@ -1,0 +1,215 @@
+{"data":[
+    {
+      "key": "name",
+      "type": "input",
+      "label": "Name",
+      "className": "col-6",
+      "dependentRow": "name",
+      "required": true,
+      "minLength":3
+    },
+    {
+      "key": "lastName",
+      "type": "input",
+      "label":"Last Name",
+      "className": "col-6",
+      "dependentRow": "name"
+    },
+    {
+      "key": "email",
+      "type": "input",
+      "label": "Email",
+      "required": true,
+      "pattern":"^[A-Za-z0-9._/]+@+([A-Za-z]{2,4})+.+([A-Za-z]{2,4})$"
+      
+    },
+    {
+      "key": "phone",
+      "type": "input",
+      "label": "Phone",
+      "required": true,
+      "pattern":"^[6-9]{1}[0-9]{9}$"
+    },
+    {
+      "key": "address",
+      "type": "input",
+      "label": "Address",
+      "description":"Address 1",
+      "required": true,
+      "minLength":10
+    },
+    {
+      "key": "address1",
+      "type": "input",
+      "description":"Address 2",
+      "minLength":5
+    },
+    {
+      "key": "city",
+      "type": "input",
+      "className": "col-6",
+      "dependentRow": "city",
+      "label": "City",
+      "pattern":"([a-zA-Z]{2,20})"
+    },
+    {
+      "key": "state",
+      "type": "input",
+      "className": "col-6",
+      "dependentRow": "city",
+      "label": "State/Province",
+      "pattern":"([a-zA-Z]{2,20})"
+    },
+    {
+      "key": "zip",
+      "type": "input",
+      "label": "Zip/Postal Code",
+      "className": "col-3",
+      "pattern":"[0-9]{6}"
+    },
+    {
+      "key": "country",
+      "type": "input",
+      "label": "Country",
+      "pattern":"([a-zA-Z]{2,20})"
+    },
+    {
+      "key": "terms",
+      "type": "multicheckbox",
+      "label": "Please check if you are one of the following",
+      "options": [
+        {
+          "label": "Dealer",
+          "value": "1"
+        },
+        {
+          "label": "Marina",
+          "value": "2"
+        },
+        {
+          "label": "Repair Center",
+          "value": "3"
+        }
+      ]
+    },
+    {
+      "key": "enquiry",
+      "type": "select",
+      "label": "How did you hear about us?",
+      "defaultValue": 6,
+      "required": true,
+      "className": "col-3",
+      "options": [
+        {
+          "value": 1,
+          "label": "Search Engine"
+        },
+        {
+          "value": 2,
+          "label": "Local marina/ repair shop"
+        },
+        {
+          "value": 3,
+          "label": "KC boat sports show"
+        },
+        {
+          "value": 4,
+          "label": "bass master classic"
+        },
+        {
+          "value": 5,
+          "label": "other"
+        },
+        {
+          "value": 6,
+          "label": "Online Advertising/Link"
+        }
+      ]
+    },
+    {
+      "key": "locatorBrand",
+      "type": "input",
+      "label": "Locator Brand",
+      "required": true
+    },
+    {
+      "key": "locatorModel",
+      "type": "input",
+      "label": "Locator Model"
+    },
+    {
+      "key": "serialNumber",
+      "type": "input",
+      "label": "Serial Number"
+    },
+    {
+      "key": "locatorProblems",
+      "type": "multicheckbox",
+      "label": "Locator Problems (Check All That Apply)",
+      "required": true,
+      "options": [
+        {
+          "label": "Won't Turn On",
+          "value": "1"
+        },
+        {
+          "label": "Broken Buttons (additional $50 fee)",
+          "value": "2"
+        },
+        {
+          "label": "Touch Screen Issues",
+          "value": "3"
+        },
+        {
+          "label": "Cracked / Broken Screen (additional $150 fee – please email info@clearcastmarine.com before mailing to ensure a screen replacement is available)",
+          "value": "4"
+        },
+        {
+          "label": "Other (please specify below)",
+          "value": "5"
+        }
+      ]
+    },
+    {
+      "key": "comment",
+      "type": "textarea",
+      "label": "Please provide any additional details you believe would be helpful in repairing your locator."
+    },
+    {
+      "key": "accessories",
+      "type": "multicheckbox",
+      "label": "Accessories you are sending with unit.",
+      "options": [
+        {
+          "label": "Power Cord",
+          "value": "1"
+        },
+        {
+          "label": "Mounting Bracket",
+          "value": "2"
+        },
+        {
+          "label": "Protective Cover",
+          "value": "3"
+        },
+        {
+          "label": "Other (specify all below)",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "key": "conditions",
+      "type": "multicheckbox",
+      "label": "Terms & Conditions",
+      "description":"Please read the following and check box once finished to submit form.",
+      "options": [
+        {
+          "label": "I Accept",
+          "value": "1"
+        }
+      ]
+    }
+  ]
+}
+
